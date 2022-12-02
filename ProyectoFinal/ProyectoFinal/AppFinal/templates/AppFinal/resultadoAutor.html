@@ -1,0 +1,18 @@
+{% extends "AppFinal/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    Nombre : {{nombre}}
+    <br>
+    Autores:
+    {%for autor in autores%}
+        {{autor.apellido}}
+        <br>
+    {%endfor%}
+    
+
+
+
+{% endblock %}
